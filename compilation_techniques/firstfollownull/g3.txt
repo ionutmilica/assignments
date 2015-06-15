@@ -1,0 +1,4 @@
+Goal -> A
+A -> ( A ) | Two
+Two -> a
+Two -> b

@@ -1,0 +1,8 @@
+{
+    "states": ["A"],
+    "first_states": ["A"],
+    "final_states": ["A"],
+    "rules": [
+      ["A", "a", "A"]
+    ]
+}
