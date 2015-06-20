@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>First && NULL</title>
+</head>
+<body onload="compute();">
+<label for="grammar">Gramatica</label><br/>
+<textarea rows="10" cols="50" id="grammar">S->TUVW|WVUT
+T->aT|e
+U->Ub|f
+V->cV|3
+W->Wd|3</textarea><br/>
+<button onclick="compute();" id="submit">Verifica</button>
+
+<script type="application/javascript" src="underscore-min.js"></script>
+<script type="application/javascript" src="app.js"></script>
+<script>
+    function compute() {
+        var gr, alg;
+        var value = document.getElementById("grammar").value;
+
+        if (value.length > 0) {
+            gr = grammar(value);
+            gr.parse();
+
+            alg = algorithm(gr);
+            alg.compute();
+            console.log(alg.getTable());
+        }
+    }
+</script>
+</body>
+</html>
