@@ -1,4 +1,3 @@
-# Homeworks 2013 - 2016 UVT
+# West University of Timișoara (2013-2016) - Assignments
 
-I'll save here my collection of homeworks made over time in my faculty at different courses
-just to remind me from the future how noobish I was.
+Here I will store my collection of assignments made for some of my university laboratories or courses.

@@ -1,0 +1,1 @@
+gcc -Wall receiver.c utils.c -o receiver & gcc -Wall sender.c utils.c -o sender
