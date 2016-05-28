@@ -1,0 +1,24 @@
+group 'ionutmilica'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+ext.jogampVer   = '2.3.2'
+
+dependencies {
+    compile "org.jogamp.jogl:jogl-all:$jogampVer"
+    compile "org.jogamp.gluegen:gluegen-rt:$jogampVer"
+    runtime "org.jogamp.jogl:jogl-all:$jogampVer:natives-linux-i586", "org.jogamp.jogl:jogl-all:$jogampVer:natives-linux-amd64",
+            "org.jogamp.jogl:jogl-all:$jogampVer:natives-windows-i586", "org.jogamp.jogl:jogl-all:$jogampVer:natives-windows-amd64",
+            "org.jogamp.jogl:jogl-all:$jogampVer:natives-macosx-universal"
+    runtime "org.jogamp.gluegen:gluegen-rt:$jogampVer:natives-linux-i586", "org.jogamp.gluegen:gluegen-rt:$jogampVer:natives-linux-amd64",
+            "org.jogamp.gluegen:gluegen-rt:$jogampVer:natives-windows-i586", "org.jogamp.gluegen:gluegen-rt:$jogampVer:natives-windows-amd64",
+            "org.jogamp.gluegen:gluegen-rt:$jogampVer:natives-macosx-universal"
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
